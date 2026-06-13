@@ -1,0 +1,50 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+pnpm-debug.log
+.pnpm-store
+
+# Build outputs (if building inside the container)
+dist
+build
+.next
+.nuxt
+out
+
+# Environment secrets and configurations
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env.local
+
+# Testing and coverage summaries
+coverage
+.nyc_output
+*.test.js
+*.spec.js
+
+# Version control systems
+.git
+.gitignore
+.github
+.gitlab-ci.yml
+
+# IDE, text editors, and OS metadata
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
+
+# Docker files (optional, as they aren't needed inside the image)
+Dockerfile*
+docker-compose*
+.dockerignore
