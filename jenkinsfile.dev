@@ -1,0 +1,14 @@
+pipeline{
+    agent any
+    stages{
+        stage('Deployment') {
+            steps {
+                ssh ubuntu@35.154.193.204 '''
+                copy docker-compose.yaml /home/ubuntu/docker-compose.yaml
+                docker-compose -f /home/ubuntu/docker-compose.yaml down
+                docker-compose -f /home/ubuntu/docker-compose.yaml up -d
+                '''
+            }
+        }
+    }
+}
