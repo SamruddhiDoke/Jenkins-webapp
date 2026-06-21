@@ -5,7 +5,7 @@ pipeline{
             steps{
                 sh """
                 scp docker-compose.yaml ubuntu@13.233.198.221:/home/ubuntu/docker-compose.yaml
-                ssh ubuntu@13.233.198.221 '''
+                ssh ubuntu@13.206.119.4'''
                 cd /home/ubuntu
                 docker-compose down
                 docker-compose up -d
